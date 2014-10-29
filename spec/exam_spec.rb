@@ -12,7 +12,8 @@ describe Exam do
 		}
 
 		@sS1 = Simple_Selection.new("¿Quien va a ser el balon de oro?",@options1)
-	end    
+	end
+
 	describe "# Simple_Selection." do
 		
 		it "Debe existir una pregunta." do
@@ -26,5 +27,8 @@ describe Exam do
 			#Veo que existen y las muestro por pantalla.
 			@sS1.answers_to_s.should eq("a)Cristiano Ronaldo\nb)Bale\nc)Isco\nd)Modric\n")
 		end
+		it "Se deben mostrar por la consola formateada la pregunta y las opciones de respuesta." do
+			@sS1.to_s.should eq("¿Quien va a ser el balon de oro?\na)Cristiano Ronaldo\nb)Bale\nc)Isco\nd)Modric\n")
+		end  
  	end
 end
