@@ -3,7 +3,15 @@ require 'exam'
 
 describe Exam do
 	before :each do
-		@sS1 = Simple_Selection.new("¿Quien va a ser el balon de oro?")
+
+		@options1 = {
+			"a" => "Cristiano Ronaldo",
+			"b" => "Bale",
+			"c" => "Isco",
+			"d" => "Modric"
+		}
+
+		@sS1 = Simple_Selection.new("¿Quien va a ser el balon de oro?",@options1)
 	end    
 	describe "# Simple_Selection." do
 		
