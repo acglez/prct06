@@ -22,7 +22,8 @@ describe Exam do
 			#La expectativa tiene el mismo código porque para ver si existía la pregunta cree el attr_reader.(me fije en la clase Point)
 			@sS1.ask.should eq("¿Quien va a ser el balon de oro?")
 		end
-		it "Deben existir opciones de respuesta." do
+		it "Deben existir opciones de respuesta y se debe invocar a un metodo para obtener las opciones de respuesta." do
+			#Veo que existen y las muestro por pantalla.
 			@sS1.answers_to_s.should eq("a)Cristiano Ronaldo\nb)Bale\nc)Isco\nd)Modric\n")
 		end
  	end
