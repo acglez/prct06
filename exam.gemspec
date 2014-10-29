@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Exam::VERSION
   spec.authors       = ["Adrian"]
   spec.email         = ["acglez10@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = "Implementacion de una clase Linked List en Ruby."
+  spec.description   = "Crear la clase List"
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -20,4 +20,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rspec", "~>2.11"
 end
