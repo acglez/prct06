@@ -17,4 +17,10 @@ class List
         end 
         current.next = Node.new(value,nil)
     end
+
+    def add_many(values)
+		values.each do |x| 
+       		add(x)
+      	end
+	end
 end
