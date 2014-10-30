@@ -23,4 +23,8 @@ class List
        		add(x)
       	end
 	end
+
+	def head
+		@head.value.to_s
+	end
 end

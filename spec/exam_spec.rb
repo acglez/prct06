@@ -53,7 +53,7 @@ describe Exam do
  			@myList.add_many(@myArray)
  		end
  		it "Debe existir una Lista con su cabeza." do
- 			@myList.head.should eq(5)
+ 			@myList.head.should eq("5")
  		end
  	end
 end
