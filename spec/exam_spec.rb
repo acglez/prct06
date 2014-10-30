@@ -12,6 +12,7 @@ describe Exam do
 		}
 
 		@sS1 = Simple_Selection.new("¿Quien va a ser el balon de oro?",@options1)
+		@myNode =Node.new(3,2)
 	end
 
 	describe "# Simple_Selection." do
@@ -30,5 +31,11 @@ describe Exam do
 		it "Se deben mostrar por la consola formateada la pregunta y las opciones de respuesta." do
 			@sS1.to_s.should eq("¿Quien va a ser el balon de oro?\na)Cristiano Ronaldo\nb)Bale\nc)Isco\nd)Modric\n")
 		end  
+ 	end
+
+ 	describe "# Node." do
+ 		it "Debe existir un Nodo de la lista con sus datos y su siguiente."
+ 			@myNode.value.should eq(3)
+ 		end
  	end
 end
