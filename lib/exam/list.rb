@@ -1,5 +1,5 @@
 
-#Node = Struct.new(:value, :next)
+Node = Struct.new(:value, :next)
 
 class List
 
