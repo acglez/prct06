@@ -6,7 +6,7 @@ class List
 		@head = Node.new(value)
 	end
 
-	def head
-		@head.value.to_s
-	end
+	def pop()
+      	@head = @head.next
+   	end
 end

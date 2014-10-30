@@ -43,7 +43,10 @@ describe Exam do
 
  	describe "# List" do
  		it "Se extrae el primer elemento de la lista." do
- 			@myList.head
+ 			@myList.pop
+ 		end
+ 		it "Se puede insertar un elemento." do
+ 			@myList.add(8)
  		end
  	end
 end
