@@ -52,6 +52,9 @@ describe Exam do
  		it "Se pueden insertar varios elemnetos." do
  			@myList.add_many(@myArray)
  		end
+ 		it "Debe existir una Lista con su cabeza." do
+ 			@myList.head.should eq(5)
+ 		end
  	end
 end
 
