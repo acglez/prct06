@@ -14,6 +14,7 @@ describe Exam do
 		@sS1 = Simple_Selection.new("¿Quien va a ser el balon de oro?",@options1)
 		@myNode = Node.new(3,2)
 		@myList = List.new(5)
+		@myArray = [3,5,8,2,7,10]
 	end
 
 	describe "# Simple_Selection." do
@@ -47,6 +48,9 @@ describe Exam do
  		end
  		it "Se puede insertar un elemento." do
  			@myList.add(8)
+ 		end
+ 		it "Se pueden insertar varios elemnetos." do
+ 			@myList.add_many(@myArray)
  		end
  	end
 end
