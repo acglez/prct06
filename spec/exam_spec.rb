@@ -12,7 +12,7 @@ describe Exam do
 		}
 
 		@sS1 = Simple_Selection.new("¿Quien va a ser el balon de oro?",@options1)
-		@myNode =Node.new(3,2)
+		@myNode = Node.new(3,2)
 	end
 
 	describe "# Simple_Selection." do
@@ -34,8 +34,9 @@ describe Exam do
  	end
 
  	describe "# Node." do
- 		it "Debe existir un Nodo de la lista con sus datos y su siguiente."
+ 		it "Debe existir un Nodo de la lista con sus datos y su siguiente." do
  			@myNode.value.should eq(3)
+ 			@myNode.next.should eq(2)
  		end
  	end
 end
