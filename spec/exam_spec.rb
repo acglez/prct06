@@ -13,6 +13,7 @@ describe Exam do
 
 		@sS1 = Simple_Selection.new("¿Quien va a ser el balon de oro?",@options1)
 		@myNode = Node.new(3,2)
+		@myList = List.new(5)
 	end
 
 	describe "# Simple_Selection." do
@@ -39,4 +40,17 @@ describe Exam do
  			@myNode.next.should eq(2)
  		end
  	end
+
+ 	describe "# List" do
+ 		it "Se extrae el primer elemento de la lista." do
+ 			@myList.head
+ 		end
+ 	end
 end
+
+
+
+
+
+
+
