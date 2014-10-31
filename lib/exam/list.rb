@@ -7,7 +7,9 @@ class List
 	end
 
 	def pop()
+        freeNode = @head.value
       	@head = @head.next
+        freeNode
    	end
 
    	def add(value)
