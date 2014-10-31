@@ -55,6 +55,51 @@ describe Exam do
  		it "Debe existir una Lista con su cabeza." do
  			@myList.head.should eq("5")
  		end
+ 		it "Prueba para la siguiente relaciónn de preguntas de selección simple." do
+ 			@pregunta1 = "1.-)¿Cuál es la salida del siguiente código Ruby?\nclass Xyz\n\tdef pots\n\t\t@nice\n\tend\nend\n\nxyz = Xyz.new\np xyz.pots"
+			@optionsP1 = {
+				"a" => "#<Xyz:0xa000208>",
+				"b" => "nil",
+				"c" => "0",
+				"d" => "Ninguna de las anteriores"
+			}
+			@pregunta2 = "2.-)La siguiente definicion de hash en Ruby es valida\nhash_raro = {\n\t[1,2,3] => Object.new(),\n\tHash.new => :toto\n}"
+			@optionsP2 = {
+				"a" => "Cierto",
+				"b" => "Falso",
+			}
+			@pregunta3 = "3.-)¿Cual es la salida del siguiente codigo en Ruby?\nclass Array\n\tdef say_hi\n\t\t\"HEY!\"\n\tend\nend\n\np [1, \"bob\"].say_hi"
+			@optionsP3 = {
+				"a" => "1",
+				"b" => "Bob",
+				"c" => "HEY!",
+				"D" => "Ninguna de las anteriores"
+			}
+			@pregunta4 = "4.-)¿Cual es el tipo del objeto en el siguiente codigo en Ruby?\nclass Objeto\nend"
+			@optionsP4 = {
+				"a" => "Una instancia de la clase Class",
+				"b" => "Una constante",
+				"c" => "Un objeto",
+				"D" => "Ninguna de las anteriores"
+			}
+			@pregunta5 ="5.-)Es apropiado que una clase Tablero herede de una clase juego."
+			@optionsP5 ={
+				"a" => "Cierto",
+				"b" => "Falso"
+			}
+
+ 			@pS1 = Simple_Selection.new(@pregunta1,@optionsP1)
+ 			@pS2 = Simple_Selection.new(@pregunta2,@optionsP2)
+ 			@pS3 = Simple_Selection.new(@pregunta3,@optionsP3)
+ 			@pS4 = Simple_Selection.new(@pregunta4,@optionsP4)
+ 			@pS5 = Simple_Selection.new(@pregunta5,@optionsP5)
+
+ 			myExam = List.new(@pS1)
+ 			myExam.add(@pS2)
+ 			myExam.add(@pS3)
+ 			myExam.add(@pS4)
+ 			myExam.add(@pS5)
+ 		end
  	end
 end
 
